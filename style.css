@@ -1,0 +1,50 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-indicator {
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-text {
+    transition: color 0.2s ease-in-out;
+}
+
+.group.active .nav-indicator {
+    width: 4rem; /* w-16 */
+    background-color: #e2e8f0; /* bg-slate-200 */
+}
+
+.group.active .nav-text {
+    color: #e2e8f0; /* text-slate-200 */
+}
+
+.scroll-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Custom Scrollbar for Webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a; /* slate-900 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #475569; /* slate-600 */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b; /* slate-500 */
+}
