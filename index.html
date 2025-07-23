@@ -1,74 +1,229 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="zh-CN" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhicheng Liu | Senior Security Executive</title>
+    <title>Pansin - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-primary': '#0D0D2B',
+                        'brand-secondary': '#2C2C54',
+                        'brand-accent': '#00BFFF',
+                        'brand-light': '#F5F5F7',
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
-    <div id="root" class="max-w-screen-xl mx-auto px-6 sm:px-12 md:px-20 lg:px-24">
-        <div class="lg:flex lg:justify-between lg:gap-4">
-            
-            <header id="header" class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
-                <div>
-                    <h1 id="header-name" class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl"></h1>
-                    <h2 id="header-title" class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl"></h2>
-                    <p id="header-summary-brief" class="mt-4 max-w-xs leading-normal"></p>
-                
-                    <nav id="nav-menu" class="nav hidden lg:block" aria-label="In-page jump links">
-                        <ul class="mt-16 w-max">
-                            <li><a class="group flex items-center py-3 active" href="#summary"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Summary</span></a></li>
-                            <li><a class="group flex items-center py-3" href="#experience"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span></a></li>
-                            <li><a class="group flex items-center py-3" href="#project"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Project</span></a></li>
-                            <li><a class="group flex items-center py-3" href="#education"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Education</span></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+<body class="bg-brand-primary text-brand-light font-['Inter',_sans-serif]">
 
-            <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
-                <section id="summary" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Executive Summary">
-                    <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                        <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Summary</h2>
-                    </div>
-                    <div id="summary-content"></div>
-                </section>
-
-                <section id="experience" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Work Experience">
-                    <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                        <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience</h2>
-                    </div>
-                    <div id="experience-content"></div>
-                </section>
-                
-                <section id="project" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Flagship Project">
-                    <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                        <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Project</h2>
-                    </div>
-                    <div id="project-content"></div>
-                </section>
-
-                <section id="education" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Education">
-                    <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                        <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Education</h2>
-                    </div>
-                    <div id="education-content"></div>
-                </section>
-
-                <footer class="max-w-md pb-12 text-sm text-slate-500 sm:pb-16">
-                    <p>This page was designed with a focus on sophisticated minimalism and intelligent organization, inspired by modern design principles. Built with Vanilla JavaScript and Tailwind CSS. Coded with precision.
-                    </p>
-                </footer>
-            </main>
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-brand-primary/80 backdrop-blur-lg transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-white">Pansin</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="nav-link text-gray-300 hover:text-brand-accent transition-colors">Home</a>
+                <a href="#about" class="nav-link text-gray-300 hover:text-brand-accent transition-colors">About Me</a>
+                <a href="#portfolio" class="nav-link text-gray-300 hover:text-brand-accent transition-colors">Potofolo</a>
+                <a href="#skills" class="nav-link text-gray-300 hover:text-brand-accent transition-colors">Skill/a>
+                <a href="#contact" class="nav-link text-gray-300 hover:text-brand-accent transition-colors">Contact Me</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 flex-col space-y-4">
+             <a href="#home" class="nav-link text-gray-300 hover:text-brand-accent transition-colors">Home</a>
+             <a href="#about" class="nav-link text-gray-300 hover:text-brand-accent transition-colors">About ME</a>
+             <a href="#portfolio" class="nav-link text-gray-300 hover:text-brand-accent transition-colors">Potofolo</a>
+             <a href="#skills" class="nav-link text-gray-300 hover:text-brand-accent transition-colors">Skill</a>
+             <a href="#contact" class="nav-link text-gray-300 hover:text-brand-accent transition-colors">Contact Me</a>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <section id="home" class="min-h-screen flex items-center pt-20">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-5xl md:text-7xl font-black text-white leading-tight">Hello，I‘m<br><span class="text-brand-accent">Pansin</span></h1>
+                    <p class="mt-6 text-lg text-gray-300 max-w-lg mx-auto md:mx-0">
+                        A strategic security executive transforming security into a core business enabler. With 20+ years of experience, I safeguard the digital assets of over 160 million users and lead high-performance teams to build world-class security solutions.
+                    </p>
+                    <a href="#contact" class="mt-8 inline-block bg-brand-accent text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105">
+                        联系我
+                    </a>
+                </div>
+                <div class="md:w-1/2 flex justify-center items-center">
+                    <div class="w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-brand-accent shadow-2xl shadow-brand-accent/20">
+                         <img src="https://r2.flowith.net/files/a3b46d02-909b-455a-b073-bdaa54cae3be/1753236321256-liuzhicheng@2000x2000.jpg" alt="Pansin's personal photo" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white mb-4">About Me</h2>
+                    <div class="w-20 h-1 bg-brand-accent mx-auto"></div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start justify-center gap-12 lg:gap-16">
+                    <div class="md:w-2/5 lg:w-1/3 flex-shrink-0">
+                        <div class="w-full max-w-sm mx-auto bg-brand-secondary p-2 rounded-lg shadow-2xl shadow-brand-accent/20 transform hover:-translate-y-2 transition-transform duration-300">
+                             <img src="https://r2.flowith.net/files/a3b46d02-909b-455a-b073-bdaa54cae3be/1753236321256-liuzhicheng@2000x2000.jpg" alt="Pansin's photo in a suit" class="w-full h-auto object-cover rounded-md">
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 lg:w-2/3 text-left">
+                        <div class="prose prose-invert lg:prose-lg max-w-none text-gray-300">
+                            <p>A strategic security executive with over 20 years of experience in cybersecurity and IT governance, holding a distinguished track record of transforming security into a core business enabler and competitive advantage. As the Director of the Information Security Center at Lexin (NASDAQ: LX), I am entrusted with safeguarding the digital assets and privacy of **160+ million** users. My expertise lies in architecting modern security governance frameworks that are deeply integrated with corporate objectives, with proven experience across cutting-edge domains including FinTech, Smart Cities, and Vehicle-to-Everything (V2X).</p>
+                            <p>As a results-driven leader, I have successfully managed technical teams of **over 100 professionals**, delivering multiple national-level and large-scale enterprise security programs. Furthermore, as the **OWASP Guangdong Regional Lead**, inventor of **over 40** technology patents, and a key contributor to numerous national/industry standards, I possess deep insights and recognized industry influence on emerging trends such as AI security and Continuous Threat Exposure Management (CTEM).</p>
+
+                            <h3 class="text-2xl font-bold text-white mt-8 mb-4">Professional Experience</h3>
+                            <ul class="text-gray-400">
+                                <li><strong>Director, Information Security Center</strong> | Lexin (NASDAQ: LX) | Dec 2019 – Present</li>
+                                <li><strong>Chief Information Security Expert</strong> | Gosuncn Technology Group (SZSE: 300098) | Apr 2018 – Oct 2019</li>
+                                <li><strong>Director, Security Business Dept. / Chief Security Expert</strong> | Aspire Technologies (A China Mobile Company) | Dec 2008 – Apr 2018</li>
+                            </ul>
+
+                            <h3 class="text-2xl font-bold text-white mt-8 mb-4">Education</h3>
+                            <ul class="text-gray-400">
+                                <li><strong>Doctor of Business Administration (DBA)</strong> | Neoma Business School | 2020 – 2024</li>
+                                <li><strong>Master of Science in Finance</strong> | Indiana University | 2018 – 2020</li>
+                                <li><strong>Master of Business Administration (MBA)</strong> | The Hong Kong Polytechnic University | 2012 – 2014</li>
+                                <li><strong>Master of Science (MSc) in Software Technology</strong> | The Hong Kong Polytechnic University | 2007 – 2009</li>
+                                <li><strong>Bachelor of Science (BS) in Computer Science</strong> | Central South University | 2003 – 2005</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-20 md:py-32 bg-brand-secondary">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white mb-4">作品集</h2>
+                    <div class="w-20 h-1 bg-brand-accent mx-auto"></div>
+                     <p class="mt-4 text-gray-400">Showcasing key projects and achievements throughout my career.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-brand-primary rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-2">National Real-Name Supervision Platform</h3>
+                            <p class="text-gray-400">As Technical Director & Chief Architect, led the top-level design of a national platform for the State Post Bureau. The system supports 1B+ users, processes 150M+ daily orders, and passed MLPS Level 3, becoming a benchmark for national critical information infrastructure.</p>
+                        </div>
+                    </div>
+                    <div class="bg-brand-primary rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-2">Intelligent Risk Control System @ Lexin</h3>
+                            <p class="text-gray-400">Drove the upgrade of the "Qidian AI" system, deploying 60,000+ risk rules with a 1.2ms latency. This slashed the group's fraud rate by 90% YoY and increased GMV from premium users to 82%, directly enabling 14.2B RMB annual revenue.</p>
+                        </div>
+                    </div>
+                    <div class="bg-brand-primary rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-2">Corporate Security Foundation @ Gosuncn</h3>
+                            <p class="text-gray-400">Built the entire corporate security system from "0 to 1" within a year, deploying a Zero Trust R&D security domain and a threat intelligence-integrated SOC, securing 356M RMB in R&D investment and 2,300+ IPs.</p>
+                        </div>
+                    </div>
+                    <div class="bg-brand-primary rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-2">Trillion-RMB Payment Security @ Aspire</h3>
+                            <p class="text-gray-400">Designed core security solutions for China Mobile's payment business, safeguarding 358M users and 9.31 trillion RMB in annual transaction volume. My innovations provided an indispensable security guarantee and competitive edge.</p>
+                        </div>
+                    </div>
+                    <div class="bg-brand-primary rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-2">40+ Patents & National Standards</h3>
+                            <p class="text-gray-400">Sole or First Inventor for over 40 invention patents in mobile payments, identity authentication, and blockchain. Key contributor to MIIT's "12th Five-Year Plan" and security standards for intelligent vehicles with the Ministry of Public Security.</p>
+                        </div>
+                    </div>
+                    <div class="bg-brand-primary rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-2">Community Leadership & Recognition</h3>
+                            <p class="text-gray-400">Served as OWASP Guangdong Regional Lead, organizing major security forums. Recognized with multiple awards including "Top 10 Most Influential CSOs" and "Outstanding CSO of the Year." Appointed expert for platforms like SecJoin and FreeBuff.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white mb-4">Skill</h2>
+                    <div class="w-20 h-1 bg-brand-accent mx-auto"></div>
+                </div>
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                    <div class="bg-brand-secondary p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-brand-accent mb-4">Strategy & Governance</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Enterprise Security & Risk Management (ESRM) & Digital Ecosystem Risk Governance</li>
+                            <li>Aligning Security Strategy with Business Objectives to Maximize Commercial Value</li>
+                            <li>Data Security Governance & Global Compliance (ISO 27001/27701, PIPL, DPO)</li>
+                            <li>Continuous Threat Exposure Management (CTEM) & Composable Security Architecture</li>
+                        </ul>
+                    </div>
+                    <div class="bg-brand-secondary p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-brand-accent mb-4">Cutting-Edge Tech Security</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>AI / Big Data Security Architecture & Risk Control</li>
+                            <li>End-to-End IoT / Vehicle-to-Everything (V2X) Security Solutions</li>
+                            <li>Cloud-Native Security & DevSecOps Framework Implementation</li>
+                            <li>Blockchain Integration & Trusted Identity Management</li>
+                        </ul>
+                    </div>
+                    <div class="bg-brand-secondary p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-brand-accent mb-4">Operations & Cyber Defense</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Threat Intelligence-Driven Proactive Defense & Situational Awareness Systems</li>
+                            <li>Next-Generation Security Operations Center (SOC) & Incident Response (SIEM/SOAR)</li>
+                            <li>Secure Development Lifecycle (SDLC) & Supply Chain Security</li>
+                            <li>Adaptive Identity Fabric & Zero Trust Implementation</li>
+                        </ul>
+                    </div>
+                    <div class="bg-brand-secondary p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-brand-accent mb-4">Leadership & Influence</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Management, Motivation, and Mentorship of 100+ Member Cross-Functional Technical Teams</li>
+                            <li>Board of Directors & C-Level Communication and Reporting</li>
+                            <li>National and Industry Standard Development and Promotion</li>
+                            <li>Top-Tier Community Leadership (OWASP) & Building Industry-Academia-Research Ecosystems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="bg-brand-secondary py-16">
+            <div class="container mx-auto px-6 text-center text-white">
+                <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+                <p class="text-gray-400 mb-8">Looking forward to communicating and cooperating with you.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="message-circle" class="w-6 h-6 text-brand-accent"></i>
+                        <span>微信: pansin</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="mail" class="w-6 h-6 text-brand-accent"></i>
+                        <a href="mailto:pansin@gmail.com" class="hover:text-brand-accent transition-colors">电子邮件: pansin@gmail.com</a>
+                    </div>
+                </div>
+                <div class="mt-12 border-t border-gray-700 pt-6">
+                    <p class="text-gray-500 text-sm">&copy; 2025 Pansin. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
     
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" src="script.js"></script>
 </body>
 </html>
